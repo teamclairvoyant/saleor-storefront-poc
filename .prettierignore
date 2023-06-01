@@ -1,0 +1,9 @@
+pnpm-lock.yaml
+**/.rollup-cache
+**/.rollup.cache
+**/build
+**/dist
+**/.next
+**/_next
+**/.turbo
+apps/saleor-app-checkout/content/compiled-locales/*
