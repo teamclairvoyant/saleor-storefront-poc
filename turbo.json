@@ -32,6 +32,7 @@
         "PORT",
         "REACT_APP_CHECKOUT_APP_URL",
         "SALEOR_API_URL",
+        "CUSTOM_API",
         "SALEOR_APP_TOKEN",
         "SENTRY_DSN",
         "SENTRY_ENVIRONMENT",

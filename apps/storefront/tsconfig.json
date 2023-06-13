@@ -19,6 +19,8 @@
       "@/components": ["components"],
       "@/components/*": ["components/*"],
       "@/saleor/api": ["saleor/api"],
+      "@/saleor/phiApi": ["saleor/phi"],
+      "@/saleor/customApi": ["saleor/customApi"],
       "@/graphql": ["graphql"],
       "@/lib/*": ["lib/*"]
     }

@@ -14,6 +14,7 @@
     "lint:staged": "next lint --dir . --fix --quiet",
     "check-types": "tsc --noEmit",
     "generate": "dotenv -c -- graphql-codegen --config codegen.yml -w",
+    "custom-generate": "dotenv -c -- graphql-codegen --config custom-codegen.yml -w",
     "paths": "pathpida --ignorePath ../../.gitignore",
     "clean": "rm -rf .next .turbo"
   },

@@ -104,6 +104,11 @@ export function Navbar() {
               className="ml-2 lg:hidden"
               onClick={() => setBurgerOpen(true)}
             />
+            <Link href={paths.account.phiList.$url()} passHref legacyBehavior>
+              <a href="pass" data-testid="phiIcon">
+                <NavIconButton isButton={false} icon="menu" aria-hidden="true" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

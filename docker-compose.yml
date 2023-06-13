@@ -11,6 +11,7 @@ services:
         - CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
+        - CUSTOM_API=http://localhost:8080/graphql
     ports:
       - 3001:3001
     command: pnpm turbo run start --filter=saleor-app-checkout...

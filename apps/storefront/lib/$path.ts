@@ -57,6 +57,20 @@ export const pagesPath = {
             hash: url?.hash,
           }),
         },
+        phi: {
+          $url: (url?: { hash?: string }) => ({
+            pathname: "/[channel]/[locale]/account/phi" as const,
+            query: { channel, locale },
+            hash: url?.hash,
+          }),
+        },
+        phiList: {
+          $url: (url?: { hash?: string }) => ({
+            pathname: "/[channel]/[locale]/phi-list" as const,
+            query: { channel, locale },
+            hash: url?.hash,
+          }),
+        },
       },
       category: {
         _slug: (slug: string | number) => ({

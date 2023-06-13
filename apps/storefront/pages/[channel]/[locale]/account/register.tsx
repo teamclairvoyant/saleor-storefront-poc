@@ -39,7 +39,6 @@ function RegisterPage() {
         },
       },
     });
-
     if (data?.accountRegister?.errors.length) {
       // Unable to sign in.
       data?.accountRegister?.errors.forEach((e) => {
@@ -54,8 +53,10 @@ function RegisterPage() {
       return;
     }
 
+    localStorage.setItem("healthData", JSON.stringify(true));
+    localStorage.setItem("currentUser", JSON.stringify(formData.email));
     // User signed in successfully.
-    void router.push(paths.$url());
+    void router.push(paths.account.phi.$url());
   });
 
   return (

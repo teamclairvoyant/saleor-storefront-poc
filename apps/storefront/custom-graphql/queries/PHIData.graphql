@@ -1,0 +1,9 @@
+query getPhi {
+  getPhi {
+    id
+    email
+    allergies
+    healthCondition
+    takingMedication
+  }
+}

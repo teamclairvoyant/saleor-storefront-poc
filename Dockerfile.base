@@ -20,6 +20,9 @@ RUN rm .env
 ARG SALEOR_API_URL
 ENV SALEOR_API_URL ${SALEOR_API_URL:-http://localhost:8000/graphql/}
 
+ARG CUSTOM_API
+ENV CUSTOM_API ${CUSTOM_API:-http://localhost:8080/graphql}
+
 ARG STOREFRONT_URL
 ENV STOREFRONT_URL ${STOREFRONT_URL:-http://localhost:3000}
 

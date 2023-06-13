@@ -1,0 +1,21 @@
+mutation AddHealthData(
+  $email: String!
+  $allergies: Boolean!
+  $healthCondition: Boolean!
+  $takingMedication: Boolean!
+) {
+  createPhiData(
+    phiData: {
+      email: $email
+      allergies: $allergies
+      healthCondition: $healthCondition
+      takingMedication: $takingMedication
+    }
+  ) {
+    id
+    allergies
+    healthCondition
+    takingMedication
+    email
+  }
+}
